@@ -1,0 +1,126 @@
+/* General background & text */
+QWidget {
+    background-color: #FAFAFA;
+    color: #202020;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12px;
+}
+
+/* QLineEdit - Light Theme */
+QLineEdit {
+    background-color: #FFFFFF;
+    color: #202020;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 5px;
+    selection-background-color: #CCE5FF; /* light blue selection */
+    selection-color: #202020;
+}
+QLineEdit:focus {
+    border: 1px solid #007ACC; /* Blue focus border */
+}
+
+QLabel {
+    background-color: rgba(219, 246, 185, 0);
+    border: none;
+    border-radius: none;
+}
+
+/* QComboBox - Light Theme */
+QComboBox {
+    background-color: #FFFFFF;
+    color: #202020;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QComboBox:focus {
+    border: 1px solid #007ACC;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #202020;
+    selection-background-color: #CCE5FF;
+    selection-color: #202020;
+    border: 1px solid #CCC;
+}
+
+QComboBox::down-arrow {
+    image: url("downarrow.png");
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+/* QPushButton - Normal */
+QPushButton {
+    background-color: #EDEDED;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #202020;
+}
+
+/* Hover state */
+QPushButton:hover {
+    background-color: #E0E0E0;
+    border: 1px solid #007ACC; /* Blue accent */
+}
+
+/* Disabled state */
+QPushButton:disabled {
+    background-color: #F5F5F5;
+    color: #AAAAAA;
+    border: 1px solid #DDD;
+}
+
+/* Table styling */
+QTableWidget {
+    background-color: #FFFFFF;
+    color: #202020;
+    gridline-color: #CCC;
+    selection-background-color: #CCE5FF;
+    selection-color: #202020;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+QHeaderView::section {
+    background-color: #F0F0F0;
+    color: #202020;
+    border: 1px solid #CCC;
+    padding: 4px;
+}
+QTableCornerButton::section {
+    background-color: #F0F0F0;
+    border: 1px solid #CCC;
+}
+
+/* Scrollbar styling */
+QScrollBar:vertical {
+    background-color: #FAFAFA;
+    width: 12px;
+}
+QScrollBar::handle:vertical {
+    background-color: #CCCCCC;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #AAAAAA;
+}
